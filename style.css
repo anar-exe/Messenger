@@ -11,10 +11,9 @@ a:hover {
 }
 
 #chat {
-  margin: 150px;
+  margin: 150px 0 0;
   display: flex;
   justify-content: center;
-  flex-direction: row;
 }
 #chat .messagebox {
   padding: 30px;
@@ -26,15 +25,31 @@ a:hover {
   border: 1px solid #F8C471;
 }
 #chat .messagebox .layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #ffffff;
   border-radius: 20px;
+  padding: 10px;
   width: 620px;
   height: 320px;
 }
 #chat .messagebox .layout .username {
+  position: absolute;
+  top: 10px;
+  text-align: center;
   width: 70px;
-  padding: 7px 10px;
-  margin-left: 15px;
+  padding: 12px 10px;
+  border-radius: 40px;
+  background-color: #5F7F93;
+  font-size: 20px;
+  color: #ffffff;
+}
+#chat .messagebox .msg {
+  padding: 12px 10px;
+  width: auto;
   border-radius: 40px;
   background-color: #5F7F93;
   font-size: 20px;
