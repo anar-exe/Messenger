@@ -25,7 +25,6 @@ a:hover {
   border: 1px solid #F8C471;
 }
 #chat .messagebox .layout {
-  position: relative;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -37,7 +36,8 @@ a:hover {
   height: 320px;
 }
 #chat .messagebox .layout .username {
-  position: absolute;
+  display: flex;
+  justify-content: center;
   top: 10px;
   text-align: center;
   width: 70px;
@@ -47,9 +47,9 @@ a:hover {
   font-size: 20px;
   color: #ffffff;
 }
-#chat .messagebox .msg {
+#chat .messagebox .layout .msg {
+  float: right;
   padding: 12px 10px;
-  width: auto;
   border-radius: 40px;
   background-color: #5F7F93;
   font-size: 20px;
@@ -71,4 +71,13 @@ a:hover {
   background-color: #5F7F93;
   font-size: 20px;
   color: #ffffff;
+}
+@media (max-width: 500px) {
+  #chat {
+    margin: 100px auto;
+    display: block;
+  }
+  #chat .messagebox {
+    width: 540px;
+  }
 }/*# sourceMappingURL=style.css.map */

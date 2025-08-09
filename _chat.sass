@@ -11,7 +11,6 @@
         border-radius: 20px
         border: 1px solid #F8C471
         .layout
-            position: relative
             display: flex
             flex-direction: column
             overflow-y: scroll
@@ -22,7 +21,8 @@
             width: 620px
             height: 320px
             .username
-                position: absolute
+                display: flex
+                justify-content: center
                 top: 10px
                 text-align: center
                 width: 70px
@@ -31,13 +31,14 @@
                 background-color: #5F7F93
                 font-size: 20px
                 color: #ffffff
-        .msg
-            padding: 12px 10px
-            width: auto
-            border-radius: 40px
-            background-color: #5F7F93
-            font-size: 20px
-            color: #ffffff
+            .msg
+                float: right
+                padding: 12px 10px
+                // width: auto
+                border-radius: 40px
+                background-color: #5F7F93
+                font-size: 20px
+                color: #ffffff
         .control
             display: flex
             justify-content: center
@@ -52,3 +53,9 @@
                 background-color: #5F7F93
                 font-size: 20px
                 color: #ffffff
+    @media (max-width: 500px)
+        margin: 100px auto 
+        display: block
+        .messagebox
+            width: 540px
+        
