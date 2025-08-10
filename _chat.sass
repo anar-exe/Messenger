@@ -5,7 +5,7 @@
     .messagebox
         padding: 30px
         background-color: #F8C471
-        margin: 0 70px
+        margin: 0 60px
         width: 690px
         height: 450px
         border-radius: 20px
@@ -54,8 +54,14 @@
                 font-size: 20px
                 color: #ffffff
     @media (max-width: 500px)
-        margin: 100px auto 
-        display: block
+        flex-wrap: wrap
         .messagebox
-            width: 540px
-        
+            width: 375px
+            height: 325px
+            margin: 20px 10px
+            .layout
+                width: 315px
+                height: 205px
+                .username
+                    width: 55px
+                    padding: 12px 30px
