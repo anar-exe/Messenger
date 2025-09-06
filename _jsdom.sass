@@ -1,0 +1,106 @@
+#jsdom
+    padding: 80px 0
+    .container
+        max-width: 1920px
+    .chat
+        width: 688px
+        margin: 70px 10px 0  138px
+        padding: 31px
+        background-color: #f8c471
+        border-radius: 25px
+        .message
+            height: 323px
+            background-color: #ffffff
+            border-radius: 25px
+            padding: 4px 13px
+            overflow: scroll
+            word-break: break-all
+            &::-webkit-scrollbar
+                display: none
+            .line
+                max-width: 50%
+                padding: 13px
+                margin: 10px 0 5px
+                display: inline-block
+                background-color: #5f8094
+                border-radius: 25px
+                word-break: break-all
+                h3
+                    color: #ffffff
+                    font-size: 20px
+        .text
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 26px 0 0 0
+            input
+                margin-left: 15px
+                width: 235px
+                height: 45px
+                border-radius: 25px
+            .sent
+                text-align: center
+                background-color: #5f8094
+                border-radius: 25px
+                padding: 15px 35px
+                margin-left: 13px
+                cursor: pointer
+                h3
+                    cursor: pointer
+                    color: #ffffff
+        .end
+            display: flex
+            justify-content: end
+    .two
+        margin: 70px 0 0 3px
+    
+    @media  (max-width: 1750px)
+        .chat
+            width: 488px
+            height: 323px
+            margin: 80px 0 0 130px
+            .message
+                height: 223px
+                .line
+                    padding: 8px
+                    h3
+                        font-size: 16px
+            .text
+                padding: 12px 0 0 0
+                input
+                    width: 200px
+                    height: 36px
+                .sent
+                    padding: 10px 25px  
+        .two
+            margin: 80px 130px 0 0   
+        .col-md-6
+            display: flex
+            justify-content: center
+
+    @media  (max-width: 1300px)
+        .col-md-6
+            width: 100%
+            .chat,.two
+                margin: 30px 80px
+
+    @media  (max-width: 450px)
+        .chat
+            width: 300px
+            height: 423px
+            .message
+                height: 280px
+            .text
+                display: flex
+                flex-direction: column
+                input
+                    margin-left: 0
+                    margin-top: 10px
+                    width: 200px
+                .sent
+                    margin-top: 10px
+                    margin-left: 0
+                    padding: 7px 15px  
+        .col-md-6
+            .chat,.two
+                margin: 10px
